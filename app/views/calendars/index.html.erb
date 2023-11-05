@@ -12,7 +12,15 @@
     <% @week_days.each_with_index do |day, index| %>
       <div class='item'>
         <div class='date'>
-           <%= "#{day[:month]}/#{day[:date]}" %>
+          <%= "#{day[:month]}/#{day[:date]}" %><br>
+          <%= @weekdays[index] %>
+
+          <style>
+          .date {
+          font-size: 14px; /* 例: 14pxは適切なサイズに調整してください */
+          }
+          </style>
+          
         </div>
         <ul class='content'>
         <% if day[:plans].length != 0 %>
