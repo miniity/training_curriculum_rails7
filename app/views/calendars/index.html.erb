@@ -15,23 +15,6 @@
         <div class='date'>
           <%= "#{day[:month]}/#{day[:date]}" %><%= @weekdays[index] %>
 
-<!--      
-
-        <div class='date'>
-          <%= "#{day[:month]}/#{day[:date]}" %><br>
-          <%= @weekdays[index] %>
-
-
-        <div class='date' style="display: inline-block; font-size: 14px;">
-          <%= "#{day[:month]}/#{day[:date]} #{@weekdays[index]}" %>
-        </div>
-
-      <div class='date'>
-        <span class='date-text'><%= "#{day[:month]}/#{day[:date]}" %></span>
-        <span class='weekday-text'><%= @weekdays[index] %></span>
-      </div>
---> 
-
         </div>
         <ul class='content'>
         <% if day[:plans].length != 0 %>
